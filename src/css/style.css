@@ -6,8 +6,7 @@
 }
 .text{
 	text-align: left;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
+	font-family: Open Sans Bold, sans-serif;
 	font-size: 33px;
 	display: inline-block;
 	margin-top: 127.8px;
@@ -40,4 +39,14 @@
 }
 ::placeholder{
 	color:#fff;
+}
+.form-button{
+	margin-top: 60px;
+	margin-left: 46px;
+	height: 82px;
+	width: 335px;
+	border-radius: 29px;
+	border: none;
+	font-size: 25px;
+	background-color: rgba(223, 226, 234, 1)
 }
