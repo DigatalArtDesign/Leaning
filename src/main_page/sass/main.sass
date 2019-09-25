@@ -1,0 +1,38 @@
+a
+  color: black
+  display: block
+  text-align: center
+  text-decoration: none
+  &::before
+    content: ''
+    display: block
+    width: 100%
+    height: 1px
+    transform: scaleX(0)
+    background-color: red
+    transition: all 0.4s
+  &::after
+    content: ''
+    display: block
+    width: 100%
+    height: 1px
+    transform: scaleX(0)
+    background-color: red
+    transition: all 0.4s
+  &:hover::before
+    transform: scaleX(1)
+    color: red
+  &:hover::after
+    transform: scaleX(1)
+    color: red
+  &:active
+    color: green
+  &:visited
+    color: grey
+input
+  &:focus
+    outline: none
+    border: 1px solid orange 
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
+    
+
