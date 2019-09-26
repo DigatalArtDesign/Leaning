@@ -1,4 +1,4 @@
-@import url("main.css");
+@import url("../sass:sccs/main.css");
 @font-face {
 	font-family: 'Museo Sans Cyrl 900';
 	src: url('hinted-MuseoSansCyrl-900.eot');
