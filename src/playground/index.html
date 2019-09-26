@@ -1,69 +1,70 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 	<head>
 			<!-- Required meta tags -->
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 			<!-- Bootstrap CSS -->
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-			<link rel="stylesheet" type="text/css" href="css/style.css">
-			<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-			<title>Learning Pseoudoclass</title>
+			<title>Tab</title>
 	</head>
 	<body>
-			 <h1>Hello World</h1>
-			 <a href="#" class="link">Cover</a>
-			 <input class="form" type="email" name="Email">
-			 <div class="fotorama">
-			 	<img src="https://s.fotorama.io/1.jpg">
-			 	<img src="https://s.fotorama.io/2.jpg">
-			 </div>
-			 <div class="container">
-				 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalid">
-				 	Launch demo modal
-				 </button>
-			 </div>
+			 <h1>Tabs</h1>
+			<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+						aria-controls="pills-home" aria-selected="true">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+						aria-controls="pills-profile" aria-selected="false">Profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+						aria-controls="pills-contact" aria-selected="false">Contact</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+				dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+				book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+				unchanged. It was popularised in the 1960s with the release o</div>
+				<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+				layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+				'Content here, content here', making it look like readable English. Many desktop publishing packages and web page
+				editors now use Lorem Ipsum as their default model tex</div>
+				<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+			</div>
 
-			 <!-- Modal window Bootstrap -->
-			 <div class="modal" id="modalid" tabindex="-1" role="dialog">
-			 	<div class="modal-dialog" role="document">
-			 		<div class="modal-content">
-			 			<div class="modal-header">
-			 				<h5 class="modal-title">Title</h5>
-			 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			 					<span aria-hidden="true">&times;</span>
-			 				</button>
-			 			</div>
-			 			<div class="modal-body">
-			 				<p>Modal body text goes here.</p>
-			 			</div>
-			 			<div class="modal-footer">
-			 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			 				<button type="button" class="btn btn-primary">Save changes</button>
-			 			</div>
-			 		</div>
-			 	</div>
-			 </div>
-			 <div class="container">
-				 <a href="img/japan_icons.jpg" class="link2 image-link"></a>
-			 </div>
-			<!-- Magnific Popup -->
-			<link rel="stylesheet" href="../playground/Magnific-Popup/dist/magnific-popup.css">
-			<script src="../playground/Magnific-Popup/dist/jquery.magnific-popup.min.js" ></script>
-			<script>
-				$(document).ready(function() {
-				$('.image-link').magnificPopup({type:'image'});
-				});
-			</script>
+
+			<div class="accordion" id="accordionExample">
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h2 class="mb-0">
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse"
+								aria-expanded="true" aria-controls="collapse">
+								Collapsible Group Item #1
+							</button>
+						</h2>
+					</div>
+			
+					<div id="collapse" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+						<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+							officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+							moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+							keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+							butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+							haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
 			<!-- Optional JavaScript -->
 			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-			<!-- Fotorama from CDNJS, 19 KB -->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-
 			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-			<script src="https://code.jquery.com/jquery-1.12.4.min.js"
-				integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</body>
