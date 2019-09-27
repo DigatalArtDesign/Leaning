@@ -1,8 +1,12 @@
 // Variables
-$brand_orange: #D92B04;
+$brand_orange: #D92B04
+$weak_orange: rgba(242,120,92,0.7)
+$soft_orange: #f2594b
 $nav_grey: rgba(0,0,0,0.7)
+$smallest: rgba(0,0,0,0.4)
 $font: 'Open Sans', sans-serif
 $font-size: 22px
+$open: 'Open Sans Semibold', sans-serif
 
 // Mixins
 =border($size, $form, $color)
@@ -12,18 +16,74 @@ $font-size: 22px
 *
   font-family: $font
   font-size: $font-size
+  color: #000
   .nav
+    .container
+      margin-top: $font-size/0.75
     .bl
-      +border(1px,solid,black)
+      // +border(1px,solid,black)
       .logo
         line-height: 1
         padding: 0
-        margin: 0
+        margin: 5% 0 0 0 
         font-weight: 400
       .sushi
         color: $brand_orange
         padding: 0
         margin-top: -2.5%
         font-weight: 700
-    .item:link
-    
+    .second
+      // padding-left: 7%
+      .list-inline-item
+        margin: $font-size/1.5
+        .item
+          font-family: $open
+          color: $nav_grey
+          font-size: $font-size/1.2
+          font-weight: 400
+          &:visited
+            color: $nav_grey
+          &:hover
+            text-decoration: none
+            color: $weak_orange
+            transition: all 0.4s
+        .--cook
+          color: $brand_orange
+          @extend .item
+          &:visited
+            color: $brand_orange
+    .svgbtn
+      margin-top: $font-size/4
+      .but
+        width: 178px
+        height: 54px
+        color: #fff
+        background-color: #f2594b      
+        border: none
+        border-radius: 20px
+        font-weight: 700
+        font-size: $font-size/1.2
+      .svgnav
+        margin-top: 17%
+      .smallgroup
+        padding-bottom: 20px
+        
+        .cant
+          font-size: $font-size/2.75;
+          font-weight: 400
+          color: $smallest
+          display: inline-block
+          text-align: center
+          margin-left: $font-size*2
+          
+        .sign
+          @extend .cant
+          color: $nav_grey
+          margin: 0
+
+
+          
+        
+          
+
+      
