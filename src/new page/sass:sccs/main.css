@@ -56,7 +56,7 @@
   margin-top: 5.5px;
 }
 
-* .nav .svgbtn .but {
+* .nav .svgbtn .but, * .nav .svgbtn .but .login {
   width: 178px;
   height: 54px;
   color: #fff;
@@ -67,25 +67,34 @@
   font-size: 18.33333px;
 }
 
+* .nav .svgbtn .but .login {
+  text-decoration: none;
+}
+
 * .nav .svgbtn .svgnav {
   margin-top: 17%;
 }
 
-* .nav .svgbtn .smallgroup {
-  padding-bottom: 20px;
+* .nav .svgbtn .smallgroup .question {
+  padding-right: 0;
+}
+
+* .nav .svgbtn .smallgroup .answer {
+  padding-left: 2%;
 }
 
 * .nav .svgbtn .smallgroup .cant, * .nav .svgbtn .smallgroup .sign {
   font-size: 8px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.4);
-  display: inline-block;
-  text-align: center;
-  margin-left: 44px;
+  display: block;
+  text-align: right;
+  margin: 0 0 0 0;
 }
 
 * .nav .svgbtn .smallgroup .sign {
   color: rgba(0, 0, 0, 0.7);
   margin: 0;
+  text-align: left;
 }
 /*# sourceMappingURL=main.css.map */

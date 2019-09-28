@@ -17,6 +17,7 @@ $open: 'Open Sans Semibold', sans-serif
   font-family: $font
   font-size: $font-size
   color: #000
+  // outline: 1px solid black
   .nav
     .container
       margin-top: $font-size/0.75
@@ -63,23 +64,29 @@ $open: 'Open Sans Semibold', sans-serif
         border-radius: 20px
         font-weight: 700
         font-size: $font-size/1.2
+        .login
+          @extend .but
+          text-decoration: none
       .svgnav
         margin-top: 17%
       .smallgroup
-        padding-bottom: 20px
-        
+        .question
+          padding-right: 0
+        .answer
+          padding-left: 2%
         .cant
           font-size: $font-size/2.75;
           font-weight: 400
           color: $smallest
-          display: inline-block
-          text-align: center
-          margin-left: $font-size*2
-          
+          display: block
+          text-align: right 
+          margin: 0 0 0 0
         .sign
           @extend .cant
           color: $nav_grey
           margin: 0
+          text-align: left
+          
 
 
           
