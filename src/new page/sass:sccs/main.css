@@ -97,4 +97,150 @@
   margin: 0;
   text-align: left;
 }
+
+* .main .overview .col-md-5 {
+  padding-top: 78.1px;
+  padding-right: 66px;
+}
+
+* .main .overview .col-md-5 .hid {
+  display: none;
+}
+
+* .main .overview .col-md-5 .maindesc {
+  font-weight: 700;
+  font-size: 30.8px;
+  line-height: 0.9;
+}
+
+* .main .overview .col-md-5 .loremfirst {
+  opacity: 0.7;
+  font-size: 11.88px;
+  line-height: 18.92px;
+  margin: 22px 0 22px;
+  font-weight: 400;
+}
+
+* .main .overview .col-md-5 .taste {
+  margin-top: 22px;
+  width: 315.92px;
+  height: 77.88px;
+  border-radius: 26.4px;
+  border: 5px solid #000;
+}
+
+* .main .overview .col-md-5 .taste .tastel {
+  color: #000;
+  font-weight: 700;
+}
+
+* .main .overview .col-md-5 .taste .tastel:hover {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+* .main .overview .col-md-7 {
+  padding-top: 22px;
+}
+
+* .main .overview .col-md-7 .fotorama__arr {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+* .main .orange {
+  background-color: #f2785c;
+  margin-top: 7%;
+  margin-left: 15%;
+  height: 693px;
+}
+
+* .main .orange .special {
+  padding-left: 10%;
+}
+
+* .main .orange .special .offer, * .main .orange .special .adv {
+  font-weight: 700;
+  font-size: 30.8px;
+  line-height: 0.9;
+  color: #ffffff;
+  margin-top: 35%;
+}
+
+* .main .orange .special .adv {
+  font-size: 22px;
+  opacity: 0.7;
+  margin-top: 18.33333px;
+}
+
+* .main .orange .special .det1 {
+  font-size: 16.92308px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-top: 22px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+* .main .orange .special .btn2 {
+  margin-top: 35.2px;
+  margin-left: 44px;
+  width: 315.04px;
+  height: 77.88px;
+  border-radius: 26.4px;
+  border: none;
+}
+
+* .main .orange .special .btn2 .join {
+  color: #000000;
+  font-weight: 700;
+}
+
+* .main .orange .special .btn2 .join:hover {
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+
+* .main .col-md-12 {
+  margin-top: 10%;
+}
+
+* .main .sq {
+  background-color: #ffffff;
+  margin-top: 10%;
+  height: 88px;
+  width: 85%;
+  border-radius: 11px;
+}
+
+* .main .sq .small1 {
+  margin: 15.06849px;
+}
+
+* .main .sq .strong {
+  font-size: 11px;
+}
+
+* .main .sq .spam {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+* .main .sq .sec {
+  font-size: 11px;
+  font-weight: 400;
+  color: #B1B5BE;
+}
+
+* .main .sq1 {
+  margin-left: 10%;
+}
+
+* .main .slab {
+  opacity: 0.7;
+}
 /*# sourceMappingURL=main.css.map */
