@@ -2,6 +2,8 @@
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
   color: #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 * .nav .container {
@@ -242,5 +244,53 @@
 
 * .main .slab {
   opacity: 0.7;
+}
+
+* .sectionone {
+  background: #EEE;
+}
+
+* .sectionone .carousel-cell {
+  width: 45%;
+  height: 650px;
+  margin-right: 3.5%;
+  background: #8C8;
+  counter-increment: carousel-cell;
+}
+
+* .sectionone .carousel-cell .display1, * .sectionone .carousel-cell .display2, * .sectionone .carousel-cell .display3, * .sectionone .carousel-cell .display4 {
+  height: 650px;
+  background-image: url("../img/menu/1.jpg");
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 70%;
+}
+
+* .sectionone .carousel-cell .display2 {
+  background-image: url("../img/menu/2.jpg");
+}
+
+* .sectionone .carousel-cell .display3 {
+  background-image: url("../img/menu/3.jpg");
+}
+
+* .sectionone .carousel-cell .display4 {
+  background-image: url("../img/menu/4.jpg");
+}
+
+* .sectionone .carousel-cell .black, * .sectionone .carousel-cell .white {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.89);
+  position: center;
+}
+
+* .sectionone .carousel-cell .white {
+  background-color: rgba(255, 255, 255, 0.89);
+}
+
+* .sectionone .flickity-page-dots {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

@@ -18,6 +18,7 @@ $open: 'Open Sans Semibold', sans-serif
   font-family: $font
   font-size: $font-size
   color: #000
+  box-sizing: border-box
   // outline: 1px solid black
   .nav
     .container
@@ -183,7 +184,45 @@ $open: 'Open Sans Semibold', sans-serif
         margin-left: 10%
     .slab
       opacity: 0.7
-          
+  .sectionone
+    .carousel
+    background: #EEE
+  
+    .carousel-cell
+      width: 45%
+      height: 650px
+      margin-right: 3.5%
+      background: #8C8
+      counter-increment: carousel-cell
+      .display1
+        height: 650px
+        background-image: url('../img/menu/1.jpg')
+        background-size: 130%
+        background-repeat: no-repeat
+        background-position: center
+        padding-top: 70%
+      .display2
+        background-image: url('../img/menu/2.jpg')
+        @extend .display1
+      .display3
+        background-image: url('../img/menu/3.jpg')
+        @extend .display1
+      .display4
+        background-image: url('../img/menu/4.jpg')
+        @extend .display1
+      .black
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,0.89)
+        position: center
+      .white
+        @extend .black
+        background-color: rgba(255,255,255,0.89)
+        
+
+    .flickity-page-dots
+      display: none
+
 
 
 
