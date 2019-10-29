@@ -268,9 +268,9 @@ $open: 'Open Sans Semibold', sans-serif
           
         .gramm
           @extend .price
-          margin-left: $font-size*3.1
+          // margin-left: $font-size*3.1
         .svg
-          margin-left: $font-size*1.2
+          // margin-left: $font-size*1.2
           margin-bottom: $font-size/11
         #circle
           margin-left: $font-size*2
@@ -281,20 +281,32 @@ $open: 'Open Sans Semibold', sans-serif
           border: 1px solid #fff
         .optiontwo
           padding-top: 5%
-        #circletwo 
-          @extend #circle
-        #circleThree
-          @extend #circle
-        #circleFour
-          @extend #circle
-        #circleFive
-          @extend #circle
-        #circleSix
-          @extend #circle
-        #circleEight
-          @extend #circle
-        #circleSeven
-          @extend #circle
+        .contain
+          cursor: pointer
+          .radiobtn
+            position: absolute
+            opacity: 0
+            cursor: pointer
+          .checkmark
+            position: absolute
+            top: 0
+            left: 10px
+            height: 30px
+            width: 30px
+            background-color: rgba(0, 0, 0, 0.7)
+            border: 1px solid rgba(255,255,255, 1)
+            border-radius: 50%
+        .contain:hover input ~ .checkmark
+          background-color: rgba(255,255,255, 0.4)
+          transition: all 0.8s
+        .contain input:checked ~ .checkmark
+          background-color: #fff
+        .checkmark:after
+          content: ""
+          position: absolute
+          display: none
+        
+          
         .svgchange
           margin-left: $font-size
         .color

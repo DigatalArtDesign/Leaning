@@ -351,16 +351,11 @@
   width: 50px;
 }
 
-* .sectionone .col-md-10 .carousel-cell .gramm {
-  margin-left: 68.2px;
-}
-
 * .sectionone .col-md-10 .carousel-cell .svg {
-  margin-left: 26.4px;
   margin-bottom: 2px;
 }
 
-* .sectionone .col-md-10 .carousel-cell #circle, * .sectionone .col-md-10 .carousel-cell #circletwo, * .sectionone .col-md-10 .carousel-cell #circleThree, * .sectionone .col-md-10 .carousel-cell #circleFour, * .sectionone .col-md-10 .carousel-cell #circleFive, * .sectionone .col-md-10 .carousel-cell #circleSix, * .sectionone .col-md-10 .carousel-cell #circleEight, * .sectionone .col-md-10 .carousel-cell #circleSeven {
+* .sectionone .col-md-10 .carousel-cell #circle {
   margin-left: 44px;
   border-radius: 50%;
   height: 34.1px;
@@ -371,6 +366,43 @@
 
 * .sectionone .col-md-10 .carousel-cell .optiontwo {
   padding-top: 5%;
+}
+
+* .sectionone .col-md-10 .carousel-cell .contain {
+  cursor: pointer;
+}
+
+* .sectionone .col-md-10 .carousel-cell .contain .radiobtn {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+* .sectionone .col-md-10 .carousel-cell .contain .checkmark {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 30px;
+  width: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+* .sectionone .col-md-10 .carousel-cell .contain:hover input ~ .checkmark {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+* .sectionone .col-md-10 .carousel-cell .contain input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+* .sectionone .col-md-10 .carousel-cell .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 * .sectionone .col-md-10 .carousel-cell .svgchange {
