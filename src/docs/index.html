@@ -6,7 +6,12 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 			<!-- Bootstrap CSS -->
 			<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+			  <!-- Material Design for Bootstrap CSS -->
+			<link rel="stylesheet"
+			  href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+			  integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+			
+			<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 			<link rel="stylesheet" href="slick/slick.css">
 			<link rel="stylesheet" href="slick/slick-theme.css">
 			<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -18,14 +23,15 @@
 		<nav class="nav">
 				<div class="container">
 					<div class="row">
-						<div class="bl col-md-3 first">
+						<div class="bl col-md-1 first">
 							<p class="logo">now</p>
 							<p class="sushi">Sushi</p>
 						</div>
-						<div class="bl col-md-6 second">
-							<ul class="list-inline">
+						<div class="bl col-md-8 second">
+						<div class="row justify-content-center">
+							<ul class="list-inline nav-tabs">
 								<li class="list-inline-item">
-									<a class="--cook" href="#" >Cook page</a>
+									<a class="--cook" href="#">Cook page</a>
 								</li>
 								<li class="list-inline-item">
 									<a class="item" href="#">Products</a>
@@ -37,6 +43,7 @@
 									<a class="item" href="#">Contact Us</a>
 								</li>
 							</ul>
+						</div>		
 						</div>
 						<div class="bl col-md-3 third">
 							<div class= "row svgbtn">
@@ -44,13 +51,14 @@
 									<div class="svgnav"><img src="img/svg/2-layers.svg"></div>
 								</div>
 								<div class="col-md-9">
-									<button type="button" class="but"><a href="#" class="login">Log In</a></button>
+									<button type="button" class="but"><a href="#" class="login" data-toggle="modal" data-target="#loginModal">Log
+											In</a></button>
 									<div class="row smallgroup">
 										<div class="col-md-6 question">
 													<p class="cant">Can't log in?</p>
 										</div>
 										<div class="col-md-6 answer">
-											<a class="sign" href="#">Sign Up</a>
+											<a class="sign" href="/docs/signup.html">Sign Up</a>
 										</div>	
 										</div>
 									</div>								
@@ -59,31 +67,34 @@
 		</nav>
 		
 		<main class="main">
-			<div class="modal-body login-modal" id="login-modal">
-				<div class="container-fluid">
-					<div class="row mheader">
-						<div class="col-md-4">
+			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal"
+				aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="email-title" id="loginModal">Log In</h5>
+							 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								 <span aria-hidden="true" class="hidden">&times;</span>
+							 </button>
 						</div>
-						<div class="col-md-4">
-							<h2 class="h2">Sign Up</h2>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+									<label for="formEmail" class="bmd-label-floating">Email</label>
+									<input type="text" class="form-control" id="formEmail">
+								</div>
+								<div class="form-group">
+									<!-- manually specified -->
+									<label for="formPassword" class="bmd-label-floating">Password</label>
+									<input type="password" class="form-control" id="formPassword">
+									<div><span class="bmd-help">A valid password consists of A-Z letters and 0-9 numbers</span></div>
+									<div class="passwordGroup"></div>
+								</div>
+							</form>
 						</div>
-						<div class="col-md-4">
-							<span class="close">&times;</span>
-						</div>
-					
-					
-						<div class="col-md-12 inputone">
-							<input class="form-control validate" id="name" type="text" name="name" placeholder="Name">
-						</div>
-						<div class="col-md-12 inputone">
-							<input class="form-control validate" id="email" type="email" name="email" placeholder="Email">
-						</div>
-						<div class="col-md-12 inputone">
-							<input class="form-control validate" id="password" type="password" name="password" placeholder="Password">
-						</div>
-					
-						<div class="col-md-12 inputtwo">
-							<button type="button" class="signin"><a>Sign In</a></button>
+						<div class="modal-footer">
+							<button type="button" class="logIn" id="logIn">Log In</button>
 						</div>
 					</div>
 				</div>
@@ -498,6 +509,7 @@
 		</footer>
 		
 			<!-- Optional JavaScript -->
+			<script src="js/button.js"></script>
 			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -507,6 +519,18 @@
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 			<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 			<script src="slick/slick.min.js"></script>
+			<script src="js/main.js"></script>
+			<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+				integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous">
+			</script>
+			<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+				integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous">
+			</script>
+			<script>
+				$(document).ready(function () {
+					$('body').bootstrapMaterialDesign();
+				});
+			</script>
 			<script src="js/main.js"></script>
 	</body>
 </html>

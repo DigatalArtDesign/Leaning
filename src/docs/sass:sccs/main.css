@@ -53,6 +53,12 @@
   color: #D92B04;
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  * .nav .second .list-inline-item {
+    margin: 14.66667px 0.4rem;
+  }
+}
+
 * .nav .svgbtn {
   margin-top: 5.5px;
 }
@@ -476,90 +482,6 @@
   display: none;
 }
 
-.container-fluid {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  width: 35%;
-  height: 70%;
-  -webkit-box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.14), 0 6px 6px rgba(0, 0, 0, 0.18);
-          box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.14), 0 6px 6px rgba(0, 0, 0, 0.18);
-  -webkit-animation-name: scale-in-center;
-  -webkit-animation-duration: 0.4s;
-  animation-name: scale-in-center;
-  animation-duration: 0.4s;
-}
-
-.scale-in-center {
-  -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.scale-out-center {
-  -webkit-animation: scale-out-center 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: scale-out-center 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
-@-webkit-keyframes scale-out-center {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 1;
-  }
-}
-
-.scaleAnimanitionOut {
-  -webkit-animation-name: scale-out-center;
-  -webkit-animation-duration: 0.4s;
-  animation-name: scale-out-center;
-  animation-duration: 0.4s;
-}
-
-.close {
-  color: rgba(0, 0, 0, 0.7);
-  float: right;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .mheader {
   text-align: center;
   height: 9vh !important;
@@ -600,5 +522,59 @@
 
 .inputtwo {
   text-align: center !important;
+}
+
+.form-control:focus {
+  background-image: linear-gradient(0deg, rgba(242, 120, 92, 0.7) 2px, rgba(0, 150, 136, 0) 0), linear-gradient(0deg, rgba(0, 0, 0, 0.26) 1px, transparent 0);
+}
+
+.is-focused [class*=" bmd-label"],
+.is-focused [class^=bmd-label] {
+  color: rgba(242, 120, 92, 0.7);
+}
+
+.modal-header .email-title {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 9%;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.logIn {
+  width: 178px;
+  height: 54px;
+  color: #fff;
+  background-color: #f2785c;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 18.33333px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.logIn:hover {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: #f2594b;
+}
+
+.red, .redOne {
+  color: #f2594b;
+  font-size: 1rem;
+}
+
+.passwordGroup {
+  margin-top: 0.7rem !important;
+}
+
+.modal-content {
+  border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */
